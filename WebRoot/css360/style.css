@@ -1,0 +1,199 @@
+@charset "gb2312";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0;}
+body,button,input,textarea{font:12px/1.5 Tahoma, Arial, Helvetica}
+body{overflow-y:scroll!important;overflow-y:auto;}
+ol,ul{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+fieldset,img{border:0;vertical-align:top;}
+a{text-decoration:none;cursor:pointer;color:#666666;}
+a:hover{text-decoration:none;color:#f60;}
+body{ background:url(bg.png) repeat-x top; color:#666666;}
+.wrap{ clear:both; width:958px; margin:0 auto;}
+.school a:hover{ color:#618b05;}
+/*imgbg*/
+.nav,.nav li a,.boxtl,.boxtr,.boxbl,.boxbr,
+.newtag,.newtag li{ background:url(head.png) repeat;}
+.header span,.search,.ntag li,.newc li .icon1,.btn1,.btn2,.ipt1,
+.menu li,.menu a.cur,
+#gol,#gor,#topcontrol,.cztit,.czlist div,.gy em,.cztit1{ background:url(imgbg.png) no-repeat;}
+.school .nav,.school .nav li a,
+.school .boxtl,.school .boxtr,.school .boxbl,.school .boxbr,.menut,.menub,
+.menuc li,.menuc li.cur a{background:url(school.png) no-repeat;}
+/*header*/
+.header{ clear:both; overflow:hidden; height:98px; position:relative;}
+.logo{ float:left; padding:37px 0 0 11px;}
+.hdr{ position:absolute; top:20px; right:9px;color:#0072b1;}
+.hdrr{ position:absolute; top:20px; right:69px;color:#0072b1;}
+.school .hdr{ color:#618b05;}
+/*nav*/
+.nav{ float:right; width:681px; height:47px; margin-top:43px;}
+.nav li{ float:left; height:39px; line-height:39px; font-size:14px;}
+.nav li a,.school .nav li a{ float:left; height:39px; background-position:right -96px; padding:0 21px 0 22px;}
+.nav li a,.nav li a:hover{ color:#fff;}
+.nav li.cur a{ background-position:0 -176px; font-weight:bold; margin-left:-2px; position:relative;}
+.nav li.cur .index{ background-position:0 -136px; margin:0px;}
+.nav .last{ float:right; height:39px; width:90px; margin-right:5px; display:inline;}
+/*focus*/
+.focus{ width:958px; height:293px; position:relative; margin-bottom:14px;}
+.mpc{ width:958px; height:293px; overflow:hidden; margin:0 auto;}
+.mpc img{ width:958px; height:293px;}
+.focus ul{ position:absolute; right:15px; bottom:11px;}
+.focus li{ float:left; width:18px; height:18px; border:1px solid #858585; text-align:center; line-height:18px; font-family:Arial; background:#fff; margin-right:3px; display:inline; cursor:pointer;}
+.focus li.cur{ background:#64ae1f; border:1px solid #427d0b; color:#fff;}
+/*area*/
+.area,.area1{ clear:both; overflow:hidden; zoom:1;}
+.area1{ background:url(leftbg.png) repeat-y left; margin:0 0 1px;}
+.w331{ float:left; width:331px;}
+.w306{ float:left; width:306px; margin-left:10px;}
+.w301{ float:right; width:301px;}
+.left{ float:left; width:248px;}
+.right{ float:left; width:710px; overflow:hidden;}
+.bnr{ clear:both; height:112px;}
+.box{ clear:both;}
+.boxt,.boxb{ clear:both; overflow:hidden; height:4px; position:relative;}
+.boxtl,.boxtr,.boxbl,.boxbr{ width:4px; height:4px; overflow:hidden; position:absolute; top:0px;}
+.boxtl,.school .boxtl{ background-position:0 -252px; left:0px;}
+.boxtr,.school .boxtr{ background-position:0 -257px; right:0px;}
+.boxbl,.school .boxbl{ background-position:0 -262px; left:0px;}
+.boxbr,.school .boxbr{ background-position:0 -267px; right:0px;}
+.boxtc{ margin:0 4px; height:3px; overflow:hidden; border-top:1px solid #a7d2ea; background:#fff;}
+.boxbc{ margin:0 4px; height:3px; overflow:hidden; border-bottom:1px solid #a7d2ea; background:#fff;}
+.boxc,.newb{ border-left:1px solid #a7d2ea; border-right:1px solid #a7d2ea; background:#fff;}
+.boxc h2{ height:32px; line-height:32px; border-bottom:1px solid #d7e8f1; margin:0 15px; font-size:14px; color:#0072b1; padding:0 7px;}
+.boxc h2 a{color:#0072b1;}
+.school .boxtc{border-top:1px solid #c6dcb0;}
+.school .boxbc{border-bottom:1px solid #c6dcb0;}
+.school .boxc,.school .newb{ border-left:1px solid #c6dcb0; border-right:1px solid #c6dcb0;}
+.school .newb{ height:242px;}
+.school .boxc h2{ color:#618b05; border-bottom:1px solid #e4f1d4;}
+.school .boxc h2 a{ color:#618b05;}
+/*guide*/
+.guide{ height:23px; line-height:23px; padding:5px 0 3px 30px;}
+/*txt*/
+.txt,.news{ height:242px;}
+.txt p{ text-indent:2em; padding:0 18px; line-height:24px;}
+.txtc{ padding:10px 0 0 0;}
+.txtc a,.txtc a:hover{ color:#eb6100;}
+/*news*/
+.news ul{ padding:10px 0 0 0;}
+.news li{ height:24px; line-height:24px; overflow:hidden; padding-left:27px; background:url(dot.png) no-repeat 17px 10px;}
+.newtag{ height:38px; background-position:0 -272px;}
+.newtag li{ float:left; width:95px; height:35px; line-height:35px; background-position:0 -216px; text-align:center; cursor:pointer; color:#0072b1; margin-right:1px;}
+.newtag li.cur{background-position:-96px -216px; font-size:14px; font-weight:bold;}
+.newb{ height:208px; overflow:hidden;}
+.newb ul{ clear:both; overflow:hidden; zoom:1; padding:10px 0 0 12px;}
+.newb li{ float:left; width:146px; height:24px; line-height:24px; padding:0 0 0 12px; background:url(dot.png) no-repeat 3px 10px; overflow:hidden;}
+.newb li img{ margin:-3px 0 0 2px; vertical-align:middle;}
+.school .news li{ background:url(dot4.png) no-repeat 17px 10px;}
+.school .newb li{ background:url(dot4.png) no-repeat 3px 10px;}
+/*new*/
+.new{ clear:both; padding:14px 5px 0;}
+.ntag{ height:34px; background:url(ntag.png) repeat-x bottom; padding-left:13px;}
+.ntag li{ float:left; width:76px; height:24px; background-position:-178px -31px; text-align:center; line-height:20px; padding:10px 0 0 0; cursor:pointer; color:#000; margin-right:5px;}
+.ntag li.cur{ width:81px; background-position:-96px -31px; height:34px; line-height:34px; padding:0; font-size:14px; font-weight:bold;}
+.newc ul{ padding:15px 0;}
+.newc li{ height:24px; line-height:24px; padding:0 0 0 22px; background:url(dot.png) no-repeat 13px 10px; overflow:hidden;}
+.newc li a{ position:relative;}
+/*footer*/
+.footer{ text-align:center; font-family:Arial; line-height:22px; padding:15px 0; border-top:1px solid #ddd}
+/*subpage*/
+.subpage{ background:url(bg2.png) repeat-x top #fff;}
+.subpage .nav{ background-position:0 -48px;}
+/*navr*/
+.navr{ border:1px solid #e8e8e8; background:#f9f9f9; padding:14px 11px 18px 23px;}
+.navr dl{ clear:both; overflow:hidden; zoom:1; padding:5px 0 0 0;}
+.navr dt{ float:left; width:76px; font-size:14px; font-weight:bold;}
+.navr dd{ float:right; width:590px; line-height:25px;}
+.navr dd a{ display:inline-block;}
+.navr dd a.cur{  line-height:20px; background:#d2eab0; border:1px solid #83a553; padding:0 5px;}
+/*joblist*/
+.joblist{ clear:both; padding:10px 0 30px 0; line-height:20px;}
+.joblist dl{ clear:both; overflow:hidden; zoom:1; padding:15px 0 0 30px;}
+.joblist dt{ font-weight:bold;}
+.joblist dd span{ display:inline-block; width:140px;}
+.btn1{ float:right; width:85px; height:25px; background-position:-96px -66px; text-align:center; line-height:25px; margin-top:5px;}
+.school .joblist{ padding-top:15px;}
+.school .joblist dl{ padding-left:0px;}
+/*page*/
+.page{ text-align:center; padding:10px 0 40px;}
+.page a{ color:#b5b5b5; border:1px solid #f0f0f0; display:inline-block; height:21px; line-height:21px; padding:0 5px; font-family:Arial;}
+.page a.cur,.page a:hover{ border:1px solid #3c9045; background:#3c9045; color:#fff;}
+/*jobshow*/
+.jobshow{ line-height:21px; padding:30px 10px 0 35px;}
+.mail{ background:#edf7df; height:38px; line-height:38px; padding:0 20px; margin:35px 0;}
+.mail a{ font-weight:bold; color:#48a80e; text-decoration:underline;}
+.return{ float:right; color:#399d03; text-decoration:underline; margin:-5px 0 0 0;}
+.school .jobshow{ padding:30px 10px 0 0;}
+/*menu*/
+.menu{ width:184px; margin:0 auto; text-align:center; color:#000; padding:20px 0 0 0;}
+.menu a{ display:block; height:33px; color:#000;}
+.menu a.cur{ background-position:0 -162px;  position:relative; font-size:14px; font-weight:bold;}
+.menu li{ height:34px; line-height:34px; background-position:0 -197px;}
+/*content*/
+.content{ padding:15px 0 15px 17px; line-height:23px;}
+.content h2{ line-height:40px; border-bottom:1px solid #dedede; font-size:14px; margin-bottom:5px;}
+.content p{ text-indent:2em; padding:10px 0;}
+/*dsj*/
+.dsj{ clear:both; overflow:hidden; zoom:1; background:url(liney.png) repeat-y left;}
+.dsjt{ clear:both; overflow:hidden; width:15px; height:13px; background:url(dot2.png) no-repeat;}
+.dsj dl{ clear:both; overflow:hidden; zoom:1; padding:6px 0 20px 0;}
+.dsj dt{ float:left; width:139px; padding-left:20px; font-weight:bold; color:#568f0a; background:url(dot3.png) no-repeat 0 3px;}
+.dsj dd{ float:left; width:524px;}
+.dsj dd p{ text-indent:0; padding:0 0 0 9px; background:url(dot1.png) no-repeat 0 11px;}
+.qywh{ padding-left:30px; line-height:22px; padding-bottom:20px;}
+.qywh ul{ border-bottom:1px solid #e9e9e9; padding:25px 0 20px; margin-bottom:20px;}
+.qywh li{ color:#676767; line-height:23px;}
+.qywh li strong{ color:#88b649;}
+.qywh li img{ padding-bottom:5px;}
+.qywh p{ color:#000000;}
+.lh{padding:15px 0 15px 25px;}
+.imgText{ line-height:23px; padding:10px 0 15px;}
+.imgText strong{ display:block;}
+.imgText strong a{ color:#3F9B0C; font-size:14px}
+.imgText strong a:hover{ color:#f60}
+.imgText ul{ padding:10px 0 0 0;}
+.imgText li{ display:inline; padding-right:55px;}
+.imgText p a{ color:#079d0a; float:right; margin-top:-23px;}
+/*ask*/
+.ask{ padding-left:20px;}
+.ask ul{ border-bottom:1px solid #d8d8d8; padding:15px 0 12px;}
+.ask li{ line-height:23px;}
+.ask dl{ line-height:22px; padding:20px 0 0 0;}
+.ask dt{ font-weight:bold; padding-left:31px; background:url(icon2.png) no-repeat; height:25px; line-height:25px;}
+.ask dd{ padding-left:31px; padding-bottom:20px;}
+#topcontrol{ width:47px; height:24px; line-height:24px; background-position:0 -366px; text-align:center;}
+#topcontrol a{ color:#000;}
+.lc{ padding:35px 0 70px 70px;}
+/*list*/
+.list{ padding:20px 0 0 22px;}
+.list h2{ height:25px; line-height:25px; font-size:14px; color:#3f9b0c; border-bottom:2px solid #3f9b0c;}
+.list h2 span{ float:right; font-size:12px; font-weight:normal;}
+.list h2 a{color:#3f9b0c;}
+.list h2 a:hover{color:#f60;}
+.list ul{ padding:12px 0 20px;}
+.list li{ height:23px; line-height:23px; padding:0 16px; background:url(dot1.png) no-repeat 8px 10px;}
+.list li span{ float:right}
+/*contact*/
+.contact{ clear:both; padding:0 0 50px 48px;}
+.contact dl{ clear:both; overflow:hidden; zoom:1; line-height:22px; padding:47px 0 10px;}
+.contact dt{ float:left; width:80px; font-size:24px; font-family:"Î¢ÈíÑÅºÚ"; color:#999999; padding-top:3px;}
+.contact dd{ float:left; border-left:3px solid #e1edd4; padding-left:16px;}
+/*school*/
+.school{ background:url(bg2.png) repeat-x top #fff;}
+.school .nav{ width:576px;}
+.school-subpage{ background:url(bg2.png) repeat-x top #fff;}
+.school-subpage .nav{ background-position:0 -48px;}
+/*menu1*/
+.menu1{ float:left; width:160px;}
+.menut,.menub{ clear:both; overflow:hidden; height:3px; background-position:0 -272px;}
+.menub{ background-position:0 -276px;}
+.menuc{ clear:both; background:#f5f5f5; min-height:616px; _height:616px;}
+.menuc h2{ text-align:center; padding:11px 0 30px;}
+.menuc h2 img{ margin:0 auto;}
+.menuc li{ height:31px; background-position:0 -280px;}
+.menuc li a{ display:block; height:28px; text-align:center; color:#000; line-height:28px; margin-top:2px;}
+.menuc li.cur a{ background-position:0 -312px; font-weight:bold; font-size:14px; margin-top:1px;}
+/*rights*/
+.rights{ float:right; width:750px;}
+.rights .tit{ height:30px; font-size:26px; font-family:"ºÚÌå"; font-weight:normal; color:#5b8721; padding-left:15px; background:url(dot5.png) no-repeat 0 7px;}
+.maps{ padding:60px 0 0 75px;}

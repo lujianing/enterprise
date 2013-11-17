@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 通过常量配置Struts 2的国际化资源信息 -->
+	<constant name="struts.custom.i18n.resources" value="global"/>
+	<!-- 通过常量配置Struts 2所使用的解码集-->
+	<constant name="struts.i18n.encoding" value="UTF-8"/>
+	<!-- 配置Struts上传文件的最大上限 -->
+	<constant name="struts.multipart.maxSize" value="10000000000" />
+	
+	<package name="json" namespace="/validate" extends="json-default">
+		<action name="validate" class="com.qianyan.action.ValidateAction"
+			method="vali">
+			<result type="json">
+			<param name="excludeProperties">msg</param>
+			</result>
+		</action>
+	</package>
+	
+	<!-- 配置本系统所使用的包 -->
+	<package name="lu" extends="struts-default">
+		 <interceptors>
+		     <interceptor name="Login" class="com.qianyan.interceptor.AdminLogin"></interceptor>
+		 </interceptors> 
+		 
+		 <action name="Admin_*" class="com.qianyan.action.AdminAction" method="{1}">
+		     <result name="adminloginSucc">/WEB-INF/admin/adminmain.jsp</result>
+		 	<result name="adminlogin">/WEB-INF/admin/login.jsp</result>
+		 	<result name="adminlistnews">/WEB-INF/admin/listnews.jsp</result>
+		 	<result name="adminlistmessages">/WEB-INF/admin/listmessages.jsp</result>
+		 	<result name="adminlistusers">/WEB-INF/admin/listusers.jsp</result>
+		 	<result name="adminlistvideos">/WEB-INF/admin/listvideos.jsp</result>
+		 	<result name="adminlistpictures">/WEB-INF/admin/listpictures.jsp</result>
+		 	<result name="admingetcompanyinfo">/WEB-INF/admin/companyinfo.jsp</result>
+		 	<result name="adminaddnews">/WEB-INF/admin/addnews.jsp</result>
+		 	
+		 	<result name="addvideo">/WEB-INF/admin/addvideo.jsp</result>
+		 	
+		 	<result name="addnews">/WEB-INF/admin/addnews.jsp</result>
+		 	
+		 	<result name="addcompanyinfo">/admin/view/addcompanyinfo.jsp</result>
+		 	<result name="compupdateinput">/WEB-INF/view/updateinputcompanyinfo.jsp</result>
+		 	
+		 	<result name="pictureupload">/WEB-INF/admin/pictureupload.jsp</result>
+		 	<result name="autoupload">/WEB-INF/admin/autoupload.jsp</result>
+		 	<result name="admingetnews">/WEB-INF/admin/newsview.jsp</result>
+		 	<result name="updatepictureinput">/WEB-INF/admin/pictureupdate.jsp</result>
+		 	<result name="pictureupdateSucc">/WEB-INF/view/success.jsp</result>
+		 	<result name="getvideo">/WEB-INF/admin/videoshow.jsp</result>
+		 	<result name="getuser">/WEB-INF/admin/userinfo.jsp</result>
+		 	<result name="deleteadminSucc">/WEB-INF/view/success.jsp</result>
+		 	<result name="addadminSucc">/WEB-INF/view/success.jsp</result>
+		 	<result name="Succ">/WEB-INF/view/success.jsp</result>
+		 	<interceptor-ref name="Login"></interceptor-ref>
+		 	<interceptor-ref name="defaultStack"></interceptor-ref>
+		     
+		 </action>
+	    
+		 <!-- 采用通配符匹配action -->
+		 <action name="*_*" class="com.qianyan.action.{1}Action" method="{2}">
+		 	<!-- /WEB-INF 下防止用户直接访问 -->
+		 
+		 	<result name="mainpage">/main.jsp</result>
+		 	<result name="error">/WEB-INF/view/error.jsp</result>
+		 	<result name="addvideo">/WEB-INF/view/addvideo.jsp</result>
+		 	<result name="addvideoSucc">/WEB-INF/view/success.jsp</result>
+		 	<result name="listvideo">/WEB-INF/view/listvideo.jsp</result>
+		 	<result name="getvideo">/WEB-INF/view/videoshow.jsp</result>
+		 	<result name="deletevideo">/WEB-INF/view/success.jsp</result>
+		 	<result name="videoupdateinput">/WEB-INF/view/updatevideo.jsp</result>
+		 	<result name="videoupdatesuccess">/WEB-INF/view/success.jsp</result>
+		 	<result name="addnews">/WEB-INF/view/addnews.jsp</result>
+		 	<result name="addnewsSucc">/WEB-INF/view/success.jsp</result>
+		 	<result name="deleteSucc">/WEB-INF/view/success.jsp</result>
+		 	<result name="listnews">/WEB-INF/view/listnews.jsp</result>
+		 	<result name="getnews">/WEB-INF/view/newsview.jsp</result>
+		 	<result name="demo">/WEB-INF/view/demo.jsp</result>
+		 	<result name="getcompanyinfo">/WEB-INF/view/companyinfo.jsp</result>
+		 	<result name="addcompanyinfo">/WEB-INF/view/addcompanyinfo.jsp</result>
+		 	<result name="compupdateinput">/WEB-INF/view/updateinputcompanyinfo.jsp</result>
+		 	<result name="connect">/WEB-INF/view/connect.jsp</result>
+		 	<result name="register">/WEB-INF/view/register.jsp</result>
+		 	<result name="usersaveSucc">/WEB-INF/view/success.jsp</result>
+		 	<result name="changlocal">/index.jsp</result>
+		 	<result name="listpictures">/WEB-INF/view/listpicture.jsp</result>
+		 	<result name="savePicSucc">/WEB-INF/view/success.jsp</result>
+		 	<result name="deletePicSucc">/WEB-INF/view/success.jsp</result>
+		 	<result name="pictureupload">/WEB-INF/view/pictureupload.jsp</result>
+		 	<result name="autoupload">/WEB-INF/view/autoupload.jsp</result>
+		 	<result name="listbynum">/WEB-INF/view/picturewall.jsp</result>
+		 	<result name="getpicture">/WEB-INF/view/pictureview.jsp</result>
+		 	<result name="pictureupdateSucc">/WEB-INF/view/success.jsp</result>
+		 	<result name="uservaliSucc">/WEB-INF/view/success.jsp</result>
+		 	
+		 	
+		 </action>
+		 
+		 <action name="download" class="com.qianyan.action.DownloadAction">
+			<param name="inputPath">videos/flv/</param>
+			<result type="stream">
+				<param name="contentType">application/octet-stream</param>
+				<!--${downloadFileName}相当于调用action的getDownloadFileName()方法-->
+				<param name="contentDisposition">attachment;filename="${downloadFileName}"</param>
+				<param name="inputName">targetFile</param>
+			</result>
+		</action>
+		
+		 
+	    <action name="admin" class="com.qianyan.action.AdminAction" method="login">
+	        <result name="adminlogin">/WEB-INF/admin/login.jsp</result>	        
+	    </action>
+<!-- 	    
+	    <actin name="test">
+	        <result type="chain">test1</result>	        
+	    </actin>
+	    
+	    <actin name="test1" class="">
+	        <result type="chain">test1</result>	        
+	    </actin>
+ -->
+	</package>
+	
+	
+	
+</struts>
